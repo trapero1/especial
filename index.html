@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Una pregunta para ti ❤️</title>
+
+<title>Una pregunta para ti 🖤</title>
 
 <style>
 * {
@@ -19,41 +20,48 @@ body {
     align-items: center;
     overflow-x: hidden;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc3a0);
-    color: #7a1935;
+    background: linear-gradient(135deg, #000000, #141414, #292929);
+    color: #ffffff;
     padding: 25px 15px;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.94);
+    background: rgba(25, 25, 25, 0.97);
     width: 100%;
     max-width: 470px;
     padding: 35px 25px;
+    border: 1px solid #383838;
     border-radius: 28px;
     text-align: center;
-    box-shadow: 0 15px 50px rgba(120, 20, 55, 0.25);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
     position: relative;
     z-index: 2;
     animation: aparecer 1s ease;
 }
 
 .heart {
-    font-size: 75px;
+    font-size: 65px;
     animation: latido 1.2s infinite;
 }
 
 h1 {
     font-size: 30px;
     margin: 15px 0;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ff365e;
 }
 
 p {
     font-size: 17px;
     line-height: 1.7;
+    color: #dddddd;
 }
 
 .nombre {
-    color: #ff3867;
+    color: #ff365e;
     font-weight: bold;
 }
 
@@ -79,23 +87,24 @@ button:hover {
 }
 
 .yes {
-    background: #ff3867;
+    background: #ff1744;
     color: white;
-    box-shadow: 0 5px 15px #ff386755;
+    box-shadow: 0 5px 20px #ff174433;
 }
 
 .yes:hover {
-    background: #e91e50;
+    background: #d50032;
 }
 
 .no {
-    background: #ffe4ec;
-    color: #a52a50;
+    background: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
 }
 
 .small {
     font-size: 13px;
-    color: #a66a7c;
+    color: #aaaaaa;
     margin-top: 22px;
 }
 
@@ -105,7 +114,7 @@ button:hover {
 }
 
 #surprise h2 {
-    color: #ff3867;
+    color: #ff365e;
     font-size: 29px;
 }
 
@@ -116,16 +125,21 @@ button:hover {
 
 .heart-float {
     position: fixed;
-    bottom: -50px;
+    bottom: -60px;
     font-size: 25px;
     animation: flotar linear forwards;
     pointer-events: none;
     z-index: 1;
+    user-select: none;
 }
 
 @keyframes latido {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.15); }
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
 }
 
 @keyframes aparecer {
@@ -144,7 +158,11 @@ button:hover {
         transform: translateY(0) rotate(0deg);
         opacity: 0;
     }
-    15% { opacity: 0.8; }
+
+    15% {
+        opacity: 0.9;
+    }
+
     to {
         transform: translateY(-115vh) rotate(360deg);
         opacity: 0;
@@ -158,7 +176,8 @@ button:hover {
 <div class="card">
 
     <div id="question">
-        <div class="heart">💗</div>
+
+        <div class="heart">🖤🥀</div>
 
         <h1>Tengo una pregunta para ti...</h1>
 
@@ -169,51 +188,61 @@ button:hover {
 
         <p>
             Me encanta compartir momentos contigo,
-            conocerte cada día más y ver esa sonrisa
-            que hace especiales los momentos más sencillos.
+            conocerte cada día más y crear recuerdos
+            que podamos guardar para siempre. ❤️
         </p>
 
         <p>
             No sé qué nos depare el futuro, pero me gustaría
             descubrirlo contigo, paso a paso,
-            si tú también lo deseas. ❤️
+            si tú también lo deseas.
         </p>
 
-        <h2>¿Quieres ser mi novia? 🥹💕</h2>
+        <h2>¿Quieres ser mi novia? 🥹❤️</h2>
 
         <div class="buttons">
+
             <button class="yes" onclick="sayYes()">
-                ¡Sí, quiero! ❤️
+                ¡Sí, quiero! ❤️🔥
             </button>
 
             <button class="no" onclick="sayNo()">
-                Necesito pensarlo 💭
+                Necesito pensarlo 😔
             </button>
+
         </div>
 
         <p class="small">
-            Hecho con cariño, especialmente para ti. 💌
+            Una pregunta especial... 🎁🥀
         </p>
+
     </div>
 
     <div id="surprise">
-        <div class="final-heart">💖</div>
 
-        <h2>¡Me acabas de sacar una sonrisa! 🥹</h2>
+        <div class="final-heart">❤️🥀</div>
+
+        <h2>¡Gracias por responder! 🎁</h2>
 
         <p>
-            Gracias por que ahora me vas a arruinar la vida canto de puta zorra
+            Me hace ilusión compartir este momento contigo.
+            Quiero que lo que venga esté lleno de sinceridad,
+            confianza y respeto. ❤️
         </p>
 
         <p>
-            Quiero que construyamos algo bonito,
-            con cariño, confianza, respeto y muchas
-            experiencias que podamos recordar. 🌷
+            Que nunca falten las risas, los recuerdos
+            y las ganas de seguir conociéndonos. 🐐🔥
         </p>
 
-        <h1>❤️ ¡Comienza una nueva historia! ❤️</h1>
+        <h1>🖤 Una nueva historia 🥀</h1>
 
-        <p>Este momento siempre será especial. 💌</p>
+        <p>❤️👺⭕👺❤️</p>
+
+        <button class="yes" onclick="celebrate()">
+            ¡Otra sorpresa! 🎁🔥
+        </button>
+
     </div>
 
 </div>
@@ -231,37 +260,51 @@ function sayYes() {
 function sayNo() {
     const button = document.querySelector(".no");
 
-    button.textContent = "Está bien, tómate tu tiempo 💗";
-
-    const message = document.createElement("p");
-    message.textContent =
-        "No hay presión. Lo importante es que elijas lo que realmente sientes.";
-    message.style.color = "#a52a50";
-    message.id = "noMessage";
+    button.textContent = "Está bien, tómate tu tiempo 😔";
 
     if (!document.getElementById("noMessage")) {
+        const message = document.createElement("p");
+
+        message.id = "noMessage";
+        message.textContent =
+            "No hay presión. Lo importante es que elijas lo que realmente sientes. 🖤";
+
         button.parentNode.after(message);
+    }
+}
+
+function celebrate() {
+    for (let i = 0; i < 60; i++) {
+        setTimeout(createHeart, i * 70);
     }
 }
 
 function createHeart() {
     const heart = document.createElement("div");
+
     heart.className = "heart-float";
 
-const hearts = ["🍆", "🍌", "🌶️", "🚀", "😂", "💦"];    heart.textContent = hearts[
-        Math.floor(Math.random() * hearts.length)
+    const emojis = [
+        "👺", "⭕", "👺", "❤️", "🥀", "⚠️",
+        "🔥", "😔", "🟩", "🐐", "🥀", "🎁"
+    ];
+
+    heart.textContent = emojis[
+        Math.floor(Math.random() * emojis.length)
     ];
 
     heart.style.left = Math.random() * 100 + "vw";
-    heart.style.animationDuration = (3 + Math.random() * 4) + "s";
-    heart.style.fontSize = (18 + Math.random() * 25) + "px";
+    heart.style.animationDuration =
+        (3 + Math.random() * 4) + "s";
+    heart.style.fontSize =
+        (18 + Math.random() * 25) + "px";
 
     document.body.appendChild(heart);
 
     setTimeout(() => heart.remove(), 7500);
 }
 
-// Corazones decorativos de fondo
+// Emojis flotantes de fondo
 setInterval(() => {
     if (document.hidden) return;
     createHeart();
